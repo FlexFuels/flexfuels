@@ -1,0 +1,73 @@
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Add hover effect to rows */
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin: 0 0 1rem 0;
+    }
+
+    tr:nth-child(even) {
+        background: #f4f4f4;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 12px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td[data-label="UserID"]:before { content: "UserID"; }
+    td[data-label="Username"]:before { content: "Username"; }
+    td[data-label="Email"]:before { content: "Email"; }
+    td[data-label="First Name"]:before { content: "First Name"; }
+    td[data-label="Last Name"]:before { content: "Last Name"; }
+    td[data-label="Address"]:before { content: "Address"; }
+    td[data-label="Phone"]:before { content: "Phone"; }
+    td[data-label="Role"]:before { content: "Role"; }
+    td[data-label="Account Status"]:before { content: "Account Status"; }
+    td[data-label="Gender"]:before { content: "Gender"; }
+    td[data-label="City"]:before { content: "City"; }
+    td[data-label="State"]:before { content: "State"; }
+    td[data-label="Pin Code"]:before { content: "Pin Code"; }
+}

@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.home-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+}
+
+.logo {
+    color: #00aaff;
+    font-size: 24px;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.search-bar .search-button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .fa-shopping-bag {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.login-signup-button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.login-signup-button:hover {
+    background-color: #00aaff; 
+    transform: scale(1.05); 
+}
+
+.poster {
+    background-color: #333;
+    height: 200px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.categories-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.category-button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.category-button:hover {
+    background-color: #00aaff; 
+    transform: scale(1.05); 
+}
+
+.shop-by-level,
+.shop-by-brand {
+    margin: 20px 0;
+}
+
+.shop-by-level h2,
+.shop-by-brand h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.level-buttons,
+.brand-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1900px; /* Adjust max-width as needed */
+}
+
+.level-button,
+.brand-button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px; 
+    margin: 0px; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.level-button:hover,
+.brand-button:hover {
+    background-color: #00aaff; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly scale up the button */
+}
+
+
+@media (max-width: 768px) {
+    .home-container {
+        padding: 10px;
+    }
+
+    .search-bar input {
+        width: 150px;
+    }
+
+    .poster {
+        height: 150px;
+        font-size: 20px;
+    }
+
+    .category-button,
+    .level-button,
+    .brand-button {
+        padding: 10px;
+        width: 80px;
+        height: 80px;
+    }
+}
